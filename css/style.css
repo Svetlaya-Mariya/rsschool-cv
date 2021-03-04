@@ -1,0 +1,47 @@
+:root {
+  background: linear-gradient(#8fd4c1, #ffffff);
+}
+body {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  background: white;
+}
+header {
+  background-color: rgb(9, 102, 102);
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+}
+main {
+  font-size: 20px;
+}
+#me {
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 20%;
+  border-radius: 10px;
+}
+section {
+  margin: 0 10px 10px 30px;
+}
+pre {
+  font-size: 12pt;
+}
+footer {
+  font-size: 14pt;
+  background-color: rgb(9, 102, 102);
+  color: rgb(39, 38, 38);
+}
+footer div {
+  padding: 10px 20px 20px 120px;
+}
+footer a {
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+}
+footer img {
+  width: 70px;
+}
