@@ -1,0 +1,230 @@
+:root {
+  margin: 0 auto;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+#wraper {
+  height: 779px;
+  background-color: #02160b;
+  background-image: url("assets/fox.png");
+  background-size: 1440px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+header,
+#survival {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+header {
+  padding-top: 13px;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+header div {
+  display: inline;
+  display: flex;
+  align-content: center;
+}
+header div img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+h1 {
+  display: inline;
+  margin-left: 16px;
+  padding: 0;
+  color: #f7f7f7;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.3px;
+  line-height: 60px;
+}
+h1:hover {
+  text-shadow: 1px 1px 2px #f7f7f7;
+  cursor: pointer;
+}
+h1:active {
+  color: #666666;
+}
+nav {
+  display: inline-block;
+  font-family: "Open Sans";
+}
+nav ul li {
+  list-style: none;
+  display: inline;
+  margin-left: 55px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #f7f7f7;
+}
+nav ul li a:hover {
+  color: #e39128;
+}
+nav ul li a:active {
+  color: #cd6326;
+}
+nav ul li img:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+nav ul li img:active {
+  text-decoration: underline;
+}
+nav button {
+  background-color: unset;
+  color: #f7f7f7;
+  font-family: Roboto;
+  font-size: 23px;
+  font-weight: 400;
+  width: 120px;
+  height: 50px;
+  border: 2px solid #cd6326;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+nav button:hover {
+  background-color: #cd6326;
+  border: none;
+  cursor: pointer;
+}
+nav button:active {
+  background-color: #8f5613;
+}
+#survival {
+  color: cornsilk;
+  font-family: "Open Sans";
+  margin-top: 110px;
+}
+#survival h2 {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 72px;
+  color: #cd6326;
+}
+#survival p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  width: 274px;
+  color: #f7f7f7;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#survival button {
+  width: 160px;
+  height: 60px;
+  background: #cd6326;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 27px;
+  text-align: center;
+  color: #f7f7f7;
+  border: none;
+}
+#survival button:hover {
+  background-color: #e39128;
+}
+#survival button:active {
+  background-color: #8f5613;
+}
+main {
+  background-color: #cccccc;
+  border: 1px solid blueviolet;
+  font-family: "Open Sans";
+}
+main h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  color: #333333;
+  margin-top: 120px;
+  margin-bottom: 15px;
+}
+main h3 {
+  margin-top: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #666666;
+}
+main #animals {
+  margin-top: 120px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  color: #f7f7f7;
+}
+main > #animals > div {
+  position: relative;
+}
+main h4 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 36px;
+  margin-bottom: 5px;
+}
+main p {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 27px;
+}
+.deer .text {
+  position: absolute;
+  top: 217px;
+  left: 59px;
+  text-align: center;
+}
+.squirrel .text {
+  position: absolute;
+  top: 217px;
+  left: 76px;
+  text-align: center;
+}
+.bird .text {
+  position: absolute;
+  top: 217px;
+  left: 90px;
+  text-align: center;
+}
+#right:hover {
+  transform: translate(10px, 0px);
+  cursor: pointer;
+}
+#left:hover {
+  transform: translate(-10px, 0px);
+  cursor: pointer;
+}
