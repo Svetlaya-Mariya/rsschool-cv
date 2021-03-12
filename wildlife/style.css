@@ -290,6 +290,7 @@ form input {
   color: #f7f7f7;
 }
 footer {
+  background-color: #181617;
   height: 359px;
   background-color: #02160b;
   background-image: url("assets/footer.png");
