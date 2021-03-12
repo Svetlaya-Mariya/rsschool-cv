@@ -14,7 +14,8 @@ body {
   background-position: top center;
 }
 header,
-#survival {
+#survival,
+#footer_conteiner {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -28,16 +29,19 @@ header {
   align-items: center;
   align-content: center;
 }
-header div {
+header div,
+#logo {
   display: inline;
   display: flex;
   align-content: center;
 }
-header div img:hover {
+header div img:hover,
+#logo > img:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
-h1 {
+h1,
+#logo > p {
   display: inline;
   margin-left: 16px;
   padding: 0;
@@ -48,7 +52,8 @@ h1 {
   letter-spacing: 0.3px;
   line-height: 60px;
 }
-h1:hover {
+h1:hover,
+#logo > p:hover {
   text-shadow: 1px 1px 2px #f7f7f7;
   cursor: pointer;
 }
@@ -62,10 +67,13 @@ nav {
 nav ul li {
   list-style: none;
   display: inline;
-  margin-left: 55px;
   font-style: normal;
   font-weight: 400;
   font-size: 23px;
+  line-height: 60px;
+}
+header nav ul li {
+  margin-left: 55px;
 }
 nav ul li a {
   text-decoration: none;
@@ -150,8 +158,8 @@ nav button:active {
   background-color: #8f5613;
 }
 main {
+  border: 1px solid #cccccc;
   background-color: #cccccc;
-  border: 1px solid blueviolet;
   font-family: "Open Sans";
 }
 main h2 {
@@ -161,6 +169,7 @@ main h2 {
   line-height: 72px;
   text-align: center;
   color: #333333;
+  margin: 0;
   margin-top: 120px;
   margin-bottom: 15px;
 }
@@ -251,7 +260,7 @@ main #email {
 main form {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 235px;
+  margin-bottom: 238px;
 }
 form input {
   font-family: Roboto;
@@ -264,13 +273,13 @@ form input {
 }
 #email input[type="text"] {
   width: 525px;
-  height: 60px;
+  height: 59px;
   padding: 0 0 0 15px;
   opacity: 0.5;
 }
 #email input[type="submit"] {
   width: 120px;
-  height: 65px;
+  height: 63px;
   padding: 0;
   margin: 0;
   background: #cd6326;
@@ -279,4 +288,36 @@ form input {
   display: flex;
   justify-content: center;
   color: #f7f7f7;
+}
+footer {
+  height: 359px;
+  background-color: #02160b;
+  background-image: url("assets/footer.png");
+  background-size: 1440px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+}
+#footer_conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#logo:hover {
+  cursor: pointer;
+}
+#logo > p {
+  margin-left: 15px;
+}
+#footer_menu ul {
+  width: 480px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#social ul {
+  width: 240px;
+  padding: 20px 0 0 0;
+  display: flex;
+  justify-content: space-between;
 }
