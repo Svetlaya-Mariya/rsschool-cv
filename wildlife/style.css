@@ -126,8 +126,8 @@ nav button:active {
   line-height: 27px;
   width: 274px;
   color: #f7f7f7;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 55px;
+  margin-bottom: 49px;
 }
 #survival button {
   width: 160px;
@@ -166,7 +166,6 @@ main h2 {
 }
 main h3 {
   margin-top: 20px;
-  font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -227,4 +226,57 @@ main p {
 #left:hover {
   transform: translate(-10px, 0px);
   cursor: pointer;
+}
+#get_notified {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 40px;
+  text-align: center;
+  color: #333333;
+  margin-top: 235px;
+  margin-bottom: 15px;
+}
+main #email {
+  margin-top: 59px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: #f7f7f7;
+}
+main form {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 235px;
+}
+form input {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+}
+#email input[type="text"] {
+  width: 525px;
+  height: 60px;
+  padding: 0 0 0 15px;
+  opacity: 0.5;
+}
+#email input[type="submit"] {
+  width: 120px;
+  height: 65px;
+  padding: 0;
+  margin: 0;
+  background: #cd6326;
+  border: 1px solid #cd6326;
+  border-radius: 0px 5px 5px 0px;
+  display: flex;
+  justify-content: center;
+  color: #f7f7f7;
 }
