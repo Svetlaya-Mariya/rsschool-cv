@@ -11,7 +11,7 @@ body {
   background-image: url("assets/fox.png");
   background-size: 1440px;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
 }
 header,
 #survival,
@@ -35,8 +35,10 @@ header div,
   display: flex;
   align-content: center;
 }
+
 header div img:hover,
-#logo > img:hover {
+#logo > img:hover,
+#social ul li:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -46,7 +48,7 @@ h1,
   margin-left: 16px;
   padding: 0;
   color: #f7f7f7;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 32px;
   letter-spacing: 0.3px;
@@ -62,7 +64,7 @@ h1:active {
 }
 nav {
   display: inline-block;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
 }
 nav ul li {
   list-style: none;
@@ -318,7 +320,24 @@ footer {
 }
 #social ul {
   width: 240px;
-  padding: 20px 0 0 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
+}
+#social ul li {
+  width: 40px;
+  height: 40px;
+}
+footer nav ul #fb{
+  background: url("assets/frame.svg") no-repeat center;
+
+}
+footer nav ul #in{
+  background: url("assets/insta.svg") no-repeat center;
+}
+footer nav ul #pin{
+  background: url("assets/pinterest.svg") no-repeat center;
+}
+footer nav ul #tel{
+  background: url("assets/telegram.svg") no-repeat center;
 }
