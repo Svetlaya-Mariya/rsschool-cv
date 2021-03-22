@@ -1,0 +1,86 @@
+const piano = document.querySelector('.piano');
+const pianoKey = document.querySelectorAll('.piano-key');
+
+function playAudio(src){
+    const audio = new Audio();
+    audio.src = src;
+    audio.currentTime = 0;
+    audio.play();
+} 
+
+const startSound = (event)=>{
+    if(event.target.classList.contains('piano-key')) {
+      pianoKey.forEach((el) => {
+        if(el.classList.contains('piano-key-active')) {
+          el.classList.remove('piano-key-active');
+          el.classList.remove('piano-key-active-pseudo');
+        }
+      });
+  
+      if(event.target.classList.contains('piano-key')){
+        const note = event.target.dataset.note;
+        const url = `assets/audio/${note}.mp3`;
+        playAudio(url);
+      }  
+      event.target.classList.add('piano-key-active');
+      event.target.classList.add('piano-key-active-pseudo');
+    }
+}
+
+const stopSound = (event) => {
+  if(event.target.classList.contains('piano-key')) {
+    event.target.classList.remove('piano-key-active');
+    event.target.classList.remove('piano-key-active-pseudo');
+
+  }
+}
+// проводим по клавишам нажатой мышкой
+const overMouse = (event)=>{
+  event.target.classList.add("piano-key-active");
+  event.target.classList.add('piano-key-active-pseudo');
+  startSound(event);
+   pianoKey.forEach((elem) =>{
+    elem.addEventListener("mouseover", startSound);
+    elem.addEventListener("mouseout", stopSound);
+  });
+}
+
+const outMouse = (event) => {
+  event.target.classList.remove("piano-key-active");
+  event.target.classList.remove('piano-key-active-pseudo');
+  stopSound(event);
+  pianoKey.forEach((elem) =>{
+    elem.removeEventListener("mouseover", startSound);
+    elem.removeEventListener("mouseout", stopSound);
+
+  });
+}
+//активное состояние при клике мыши и воспроизведение звука
+piano.addEventListener('mousedown', overMouse);
+piano.addEventListener('mouseup', outMouse);
+
+
+
+
+
+
+// звук при нажатии на клавиатуру
+window.addEventListener('keydown', (event) => {
+  const letter = window.event.code;
+  pianoKey.forEach((el)=> {
+      if (letter ===  el.dataset.code){
+      const note = el.dataset.note;
+      const url = `assets/audio/${note}.mp3`;
+      playAudio(url);
+      if(el.classList.contains('piano-key-active')) {
+        el.classList.remove('piano-key-active');
+      }
+      else el.classList.add('piano-key-active');
+    }  
+  });
+}, false);
+window.addEventListener('keyup', (event) => {
+  pianoKey.forEach((el)=> {
+      el.classList.remove('piano-key-active');
+  });
+});
