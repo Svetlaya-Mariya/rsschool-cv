@@ -1,6 +1,6 @@
 const piano = document.querySelector('.piano');
 const pianoKey = document.querySelectorAll('.piano-key');
-
+const bodyConteiner = document.querySelector('body');
 function playAudio(src){
     const audio = new Audio();
     audio.src = src;
@@ -42,7 +42,6 @@ const overMouse = (event)=>{
 
 const outMouse = (event) => {
   event.target.classList.remove("piano-key-active");
-  //stopSound(event);
   pianoKey.forEach((elem) =>{
     elem.removeEventListener("mouseover", startSound);
     elem.removeEventListener("mouseout", stopSound);
@@ -50,7 +49,7 @@ const outMouse = (event) => {
 }
 
 piano.addEventListener('mousedown', overMouse);
-piano.addEventListener('mouseup', outMouse);
+bodyConteiner.addEventListener('mouseup', outMouse);
 
 // звук при нажатии на клавиатуру
 window.addEventListener('keydown', (event) => {
