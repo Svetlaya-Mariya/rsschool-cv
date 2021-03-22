@@ -7,7 +7,7 @@ function playAudio(src){
     audio.currentTime = 0;
     audio.play();
 } 
-
+//активное состояние при клике мыши и воспроизведение звука
 const startSound = (event)=>{
     if(event.target.classList.contains('piano-key')) {
       pianoKey.forEach((el) => {
@@ -31,7 +31,6 @@ const stopSound = (event) => {
   if(event.target.classList.contains('piano-key')) {
     event.target.classList.remove('piano-key-active');
     event.target.classList.remove('piano-key-active-pseudo');
-
   }
 }
 // проводим по клавишам нажатой мышкой
@@ -52,17 +51,11 @@ const outMouse = (event) => {
   pianoKey.forEach((elem) =>{
     elem.removeEventListener("mouseover", startSound);
     elem.removeEventListener("mouseout", stopSound);
-
   });
 }
-//активное состояние при клике мыши и воспроизведение звука
+
 piano.addEventListener('mousedown', overMouse);
 piano.addEventListener('mouseup', outMouse);
-
-
-
-
-
 
 // звук при нажатии на клавиатуру
 window.addEventListener('keydown', (event) => {
@@ -84,3 +77,30 @@ window.addEventListener('keyup', (event) => {
       el.classList.remove('piano-key-active');
   });
 });
+//меняем кнопки notes/letter
+const buttonConteiner = document.querySelector(".btn-container");
+const button = document.querySelectorAll(".btn");
+const buttonLetters = document.querySelector(".btn-letters");
+
+const changeLetters = (event) =>{
+  if (event.target.classList.contains("btn")){
+    button.forEach((el) =>{
+      if (el.classList.contains("btn-active")){
+        el.classList.remove("btn-active");
+      }
+   });
+  }
+  event.target.classList.add("btn-active");
+
+  if (buttonLetters.classList.contains('btn-active')){
+    pianoKey.forEach((el)=> {
+      el.classList.add('piano-key-letter')
+    });
+  }
+  else {
+    pianoKey.forEach((el)=> {
+      el.classList.remove('piano-key-letter')
+    });
+  }
+};
+buttonConteiner.addEventListener('click', changeLetters)
