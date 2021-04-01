@@ -1,0 +1,343 @@
+:root {
+  margin: 0;
+  padding: 0;
+  /*background-color: aqua;*/
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 1920px;
+  font-family: Roboto;
+}
+/*header и навигация*/
+#wraper {
+  width: 100%;
+  height: 700px;
+  background-image: url("assets/image/landing/main.png");
+}
+header,
+#section_1,
+main {
+  width: 1160px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  display: none;
+}
+header img {
+  margin-right: 57px;
+}
+header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 409px;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li:first-child {
+  text-shadow: #70cb0e 1px 1px 0, #70cb0e -1px -1px 0, #70cb0e -1px 1px 0,
+    #70cb0e 1px -1px 0;
+}
+header nav ul li {
+  list-style: none;
+  display: inline;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+.active:hover {
+  cursor: text;
+}
+.noactive:hover {
+  color: white;
+  text-shadow: #70cb0e 2px 1px 3px;
+}
+/* Watch you*/
+#section_1 {
+  margin-top: 130px;
+}
+#watch {
+  height: 252px;
+  width: 570px;
+}
+#section_1 h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "SceneW01";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+}
+.btn,
+.btn_test {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  background: #70cb0e;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.btn {
+  margin-top: 50px;
+  height: 51px;
+  width: 233px;
+}
+.btn i {
+  margin-right: 6px;
+}
+.btn:hover,
+.btn_choose:hover,
+.btn_test:hover {
+  background: #9dcf68;
+}
+.btn:active,
+.btn_choose:active,
+.btn_test:active {
+  outline: none;
+  background: #ffb600;
+}
+/*haw_it_works*/
+#haw_it_works {
+  position: relative;
+  height: 983px;
+  width: 100%;
+  /*display: flex;
+  justify-content: center;*/
+}
+h3 {
+  padding: 0;
+  margin: 30px;
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  display: flex;
+  justify-content: center;
+}
+#haw_it_works h3 {
+  padding-top: 70px;
+}
+.background_picture {
+  /*margin-left: -20px;*/
+  /*display: flex;
+  justify-content: center;*/
+  position: absolute;
+  z-index: 0;
+  top: 145px;
+  left: -113px;
+}
+.animals {
+  position: absolute;
+  z-index: 0;
+  top: 246px;
+  margin-left: -105px;
+  display: flex;
+  justify-content: center;
+}
+.animals ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  /*border: 2px solid red;*/
+}
+.animals ul li {
+  list-style: none;
+}
+.animals ul li img {
+  width: 250px;
+  height: 350px;
+}
+.z2 {
+  position: relative;
+  z-index: 2;
+  transform: scale(1.2, 1.14);
+  margin: 0 8px;
+}
+.z3 {
+  position: relative;
+  z-index: 3;
+  transform: scale(1.4, 1.28);
+  margin: 0 45px;
+}
+#haw_it_works p {
+  margin-top: 605px;
+  margin-left: calc(50% - 933px / 2 - 3.5px);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.8px;
+  text-align: center;
+  width: 933px;
+  height: 126px;
+  padding: 5px;
+}
+#haw_it_works p a {
+  color: #267bde;
+}
+/*pets_in_zoo*/
+#pets_in_zoo {
+  position: relative;
+  height: 1058px;
+  width: 100%;
+}
+#pets_in_zoo h3 {
+  margin: 0;
+  padding: 70px 0 0 0;
+}
+#slider {
+  padding: 0;
+  margin: 0;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#pets_conteiner {
+  display: grid;
+  grid-template-columns: 233px 233px 233px 233px;
+  grid-column-gap: 20px;
+}
+#pets_conteiner div img {
+  width: 233px;
+  height: 300px;
+}
+#pets_conteiner div img:hover {
+  transform: scale(1.08, 1.1);
+  transition: 1s;
+}
+#slider > img:hover {
+  transform: scale(1.3);
+  transition: 1s;
+}
+
+.btn_choose {
+  width: 286px;
+  height: 51px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  background: #70cb0e;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#pets_in_zoo > a {
+  text-decoration: none;
+  cursor: default;
+}
+.div_for_button {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  margin: 0;
+}
+/*pay&feed*/
+#pay_and_feed {
+  height: 600px;
+  position: relative;
+}
+#pay_and_feed h3 {
+  margin: 0 0 0 2px;
+  padding: 70px 0 0 0;
+}
+.instruction_conteiner {
+  display: flex;
+  justify-content: center;
+}
+#instruction {
+  margin-top: 85px;
+  /*border: 2px solid red;*/
+  width: 1100px;
+  height: 273px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#instruction div {
+  /*border: 2px solid blue;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 276px;
+}
+#instruction div img {
+  padding-top: 22px;
+  margin-left: 50px;
+}
+.icons {
+  position: absolute;
+  margin-top: -70px;
+  padding-left: 15px;
+}
+.icons_arrow {
+  position: absolute;
+  margin-top: -65px;
+  margin-left: 50px;
+}
+
+#instruction div p {
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+/*testimonials*/
+#testimonials {
+  border: 1px solid red;
+  position: relative;
+  height: 797px;
+}
+#testimonials h3 {
+  margin: 0 0 0 2px;
+  padding: 70px 0 0 0;
+  border: 1px solid red;
+}
+#testimonials_conteiner {
+  border: 1px solid rgb(38, 0, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 75px;
+}
+#test_grid {
+  display: grid;
+  grid-template-columns: 233px 233px 233px 233px;
+  grid-column-gap: 20px;
+}
+.bg_test {
+  height: 369px;
+  width: 233px;
+  background-color: #a7e1ff;
+}
+.btn_test {
+  height: 51px;
+  width: 246px;
+}
