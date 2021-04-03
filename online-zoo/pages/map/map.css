@@ -1,0 +1,363 @@
+:root {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 1920px;
+  font-family: Roboto;
+}
+/*header и навигация*/
+#wraper {
+  height: 80px;
+  background-color: #a7e1ff;
+}
+main {
+  background-color: #a7e1ff;
+  height: 945px;
+  position: relative;
+}
+header,
+#world_map {
+  width: 1160px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  display: none;
+}
+header img {
+  margin-right: 57px;
+}
+header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 409px;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  list-style: none;
+  display: inline;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+.active {
+  text-shadow: #70cb0e 1px 1px 0, #70cb0e -1px -1px 0, #70cb0e -1px 1px 0,
+    #70cb0e 1px -1px 0;
+}
+.active:hover {
+  cursor: default;
+}
+.noactive:hover {
+  color: white;
+  text-shadow: #70cb0e 2px 1px 3px;
+}
+/* map*/
+#world_map {
+  position: relative;
+  z-index: 0;
+}
+.panda,
+.gorilla,
+.eagle,
+.alligator {
+  position: absolute;
+  z-index: 1;
+  border: 1.5px solid white;
+  border-radius: 35px;
+}
+.panda:hover,
+.gorilla:hover,
+.eagle:hover,
+.alligator:hover {
+  border: 4px solid #70cb0e;
+  cursor: pointer;
+}
+.location1,
+.location2,
+.location3,
+.location4 {
+  position: absolute;
+  z-index: 1;
+}
+#tooltip_animals {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+#tooltip_animals span > span {
+  text-transform: uppercase;
+}
+#tooltip_animals .tool_panda,
+#tooltip_animals .tool_gorilla,
+#tooltip_animals .tool_eagle,
+#tooltip_animals .tool_alligator {
+  visibility: hidden;
+  position: absolute;
+  background-color: #70cb0e;
+  color: black;
+  /*width: 120px;*/
+  z-index: 2;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 10px;
+}
+#tooltip_animals .tool_eagle {
+  top: 501px;
+  left: 160px;
+}
+#tooltip_animals .tool_alligator {
+  top: 507px;
+  left: 382px;
+}
+#tooltip_animals .tool_gorilla {
+  top: 607px;
+  left: 738px;
+}
+#tooltip_animals .tool_panda {
+  top: 512px;
+  left: 1004px;
+}
+
+#tooltip_animals .tool_panda::after,
+#tooltip_animals .tool_gorilla::after,
+#tooltip_animals .tool_eagle::after,
+#tooltip_animals .tool_alligator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #70cb0e transparent transparent;
+}
+#tooltip_animals:hover .tool_panda,
+#tooltip_animals:hover .tool_gorilla,
+#tooltip_animals:hover .tool_eagle,
+#tooltip_animals:hover .tool_alligator {
+  visibility: visible;
+}
+
+.panda {
+  top: 507px;
+  left: 920px;
+}
+.gorilla {
+  top: 602px;
+  left: 654px;
+}
+.alligator {
+  top: 502px;
+  left: 298px;
+}
+.eagle {
+  top: 493px;
+  left: 75px;
+}
+.location1 {
+  top: 489px;
+  left: 146px;
+}
+.location2 {
+  top: 495px;
+  left: 270px;
+}
+.location3 {
+  top: 606px;
+  left: 619px;
+}
+.location4 {
+  top: 495px;
+  left: 888px;
+}
+#arrow {
+  position: absolute;
+  z-index: 1;
+  left: 1866px;
+  top: 844px;
+  width: 32px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+#arrow button {
+  height: 40px;
+  font-size: 20px;
+  background-color: white;
+  border: none;
+}
+#arrow button:hover {
+  cursor: pointer;
+  background-color: #b3b9ac;
+  transition: 0.5s;
+  color: white;
+}
+#arrow button:first-child {
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid black;
+}
+#arrow button:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+/*footer*/
+footer {
+  height: 270px;
+  display: flex;
+  align-items: flex-end;
+  align-content: space-between;
+  justify-content: center;
+  background-color: #dff5b0;
+  position: relative;
+  z-index: 1;
+}
+.footer_picture {
+  position: absolute;
+  z-index: 0;
+  top: -70px;
+  left: 12px;
+}
+footer > section {
+  z-index: 1;
+  width: 1160px;
+  height: 170px;
+  margin-bottom: 20px;
+  /* padding: px 0;
+    margin: 50px 0;*/
+}
+#navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#navigation > a > img {
+  width: 90%;
+}
+.btn_donate {
+  width: 230px;
+  height: 50px;
+  margin: 0 0 0 -35px;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  background: #70cb0e;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.btn_donate:hover {
+  background: #9dcf68;
+}
+.btn_donate:active {
+  outline: none;
+  background: #ffb600;
+}
+footer nav ul {
+  margin: 0;
+  width: 256px;
+  display: grid;
+  grid-template-columns: 128px 128px;
+  grid-template-rows: 28px 28px;
+  grid-column-gap: 40px;
+  grid-row-gap: 10px;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+.social ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
+}
+.social ul li a img:hover {
+  transform: scale(1.2);
+}
+
+#information {
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#information > p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.be_left {
+  margin-right: 55px;
+}
+.be_left_one {
+  margin-right: 79px;
+}
+.be_right {
+  margin-left: auto;
+}
+#tooltip {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+#tooltip:hover {
+  cursor: pointer;
+}
+#tooltip .tooltip_text {
+  visibility: hidden;
+  position: absolute;
+  width: 70%;
+  background-color: #70cb0e;
+  color: black;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 5px 0;
+  z-index: 1;
+  bottom: 120%;
+  left: 20%;
+}
+#tooltip .tooltip_text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #70cb0e transparent transparent transparent;
+}
+#tooltip:hover .tooltip_text {
+  visibility: visible;
+}

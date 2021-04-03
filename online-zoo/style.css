@@ -1,7 +1,6 @@
 :root {
   margin: 0;
   padding: 0;
-  /*background-color: aqua;*/
 }
 body {
   margin: 0;
@@ -42,10 +41,7 @@ header nav ul {
   margin: 0;
   padding: 0;
 }
-header nav ul li:first-child {
-  text-shadow: #70cb0e 1px 1px 0, #70cb0e -1px -1px 0, #70cb0e -1px 1px 0,
-    #70cb0e 1px -1px 0;
-}
+
 header nav ul li {
   list-style: none;
   display: inline;
@@ -57,6 +53,10 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: #000000;
+}
+.active {
+  text-shadow: #70cb0e 1px 1px 0, #70cb0e -1px -1px 0, #70cb0e -1px 1px 0,
+    #70cb0e 1px -1px 0;
 }
 .active:hover {
   cursor: default;
@@ -122,8 +122,6 @@ header nav ul li a {
   position: relative;
   height: 983px;
   width: 100%;
-  /*display: flex;
-  justify-content: center;*/
 }
 h3 {
   padding: 0;
@@ -140,9 +138,6 @@ h3 {
   padding-top: 70px;
 }
 .background_picture {
-  /*margin-left: -20px;*/
-  /*display: flex;
-  justify-content: center;*/
   position: absolute;
   z-index: 0;
   top: 145px;
@@ -379,6 +374,7 @@ h3 {
   padding: 0 20px 20px 20px;
   margin-top: 10px;
 }
+
 /*footer*/
 
 footer {
@@ -402,8 +398,6 @@ footer > section {
   width: 1160px;
   height: 170px;
   margin-bottom: 20px;
-  /* padding: px 0;
-  margin: 50px 0;*/
 }
 #navigation {
   width: 100%;
@@ -445,24 +439,7 @@ footer ul li a {
 .social ul li a img:hover {
   transform: scale(1.2);
 }
-/*
-.social ul li {
-  width: 40px;
-  height: 40px;
-}
-/*
-#fb {
-  background: url("assets/image/landing/Facebook.png") no-repeat center;
-}
-#in {
-  background: url("assets/image/landing/insta.png") no-repeat center;
-}
-#twit {
-  background: url("assets/image/landing/Twitter.png") no-repeat center;
-}
-#youtube {
-  background: url("assets/image/landing/Youtube.png") no-repeat center;
-}*/
+
 #information {
   margin-top: 55px;
   display: flex;
