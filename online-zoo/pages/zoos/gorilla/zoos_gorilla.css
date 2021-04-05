@@ -70,7 +70,6 @@ aside {
   position: fixed;
   top: 285px;
   z-index: 3;
-  bottom: 100px;
 }
 aside > img {
   position: absolute;
@@ -87,7 +86,6 @@ aside > img {
   align-content: center;
   padding-left: 19px;
   padding-top: 7px;
-  padding-bottom: 50px;
 }
 /*телаем тултип*/
 #tooltip_animals {
@@ -127,7 +125,7 @@ aside > img {
   font-size: 16px;
   line-height: 19px;
   padding: 5px 10px;
-  width: 102px;
+  width: 110px;
   top: 7px;
   left: 80px;
 }
@@ -153,7 +151,7 @@ aside > img {
   font-size: 16px;
   line-height: 19px;
   padding: 5px 10px;
-  width: 102px;
+  width: 110px;
   top: 7px;
   left: 80px;
 }
