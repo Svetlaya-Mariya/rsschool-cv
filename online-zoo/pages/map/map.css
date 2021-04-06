@@ -104,6 +104,30 @@ header nav ul li a {
 #tooltip_animals span > span {
   text-transform: uppercase;
 }
+.allig_name {
+  position: absolute;
+  z-index: 2;
+  top: 530px;
+  left: 375px;
+}
+.panda_name {
+  position: absolute;
+  z-index: 2;
+  top: 512px;
+  left: 995px;
+}
+.gor_name {
+  position: absolute;
+  z-index: 2;
+  top: 635px;
+  left: 740px;
+}
+.eagle_name {
+  position: absolute;
+  z-index: 2;
+  top: 501px;
+  left: 20px;
+}
 #tooltip_animals .tool_panda,
 #tooltip_animals .tool_gorilla,
 #tooltip_animals .tool_eagle,
