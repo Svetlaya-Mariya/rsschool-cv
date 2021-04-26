@@ -8,7 +8,8 @@
   <link href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet" />
   <link href="style.css" rel="stylesheet" />
-  <title>photo-filter</title>
+  <script src="script.js" defer></script>
+  <title>My photo-filter</title>
 </head>
 <body>
   <header class="header">
@@ -18,7 +19,7 @@
     <div class="filters">
       <label>
         Blur:
-        <input name="blur" data-sizing="px" type="range" min="0" max="10" value="0" />
+        <input name="blur" data-sizing="px" type="range" min="0" max="10" value="0"/>
         <output name="result">0</output>
       </label>
       <label>
@@ -42,6 +43,7 @@
         <output name="result">0</output>
       </label>
     </div>
+
     <div class="editor">
       <div class="btn-container">
         <button class="btn btn-reset">Reset</button>
@@ -52,7 +54,8 @@
         </label>
         <button class="btn btn-save">Save picture</button>
       </div>
-      <img src="assets/img/img.jpg" alt="image" />
+     <img class="image" src="assets/img/img.jpg" alt="image" />
+  <!--  <img class="image" src="assets/img/img.jpg" alt="image" />-->   
     </div>
   </main>
   <footer class="footer">
