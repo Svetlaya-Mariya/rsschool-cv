@@ -106,11 +106,11 @@ btnSave.addEventListener('click', function (e) {
     const ctx = canv.getContext("2d");
     ctx.filter =  `blur(${labels[0].value}px) invert(${labels[1].value}%) sepia(${labels[2].value}%) saturate(${labels[3].value}%)  hue-rotate(${labels[4].value}deg)`;
     ctx.drawImage(picture, 0, 0);
-    let link = document.createElement('a');
-    link.download = 'icon.png';
-    link.href = canv.toDataURL();
-    link.click();
-    link.delete;
+    let saveImg = document.createElement('a');
+    saveImg.download = 'picture.png';
+    saveImg.href = canv.toDataURL();
+    saveImg.click();
+    saveImg.delete;
 };
   body.append(canv);
 });
