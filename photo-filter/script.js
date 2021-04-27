@@ -60,7 +60,6 @@ function viewBgImage(src) {
   } 
 
  const changeButton = (event) => {
-    //console.log(event.target);
     if (event.target.classList.contains('btn')){
         button.forEach((el) => {
             if (el.classList.contains('btn-active')){
@@ -82,7 +81,6 @@ buttonConteiner.addEventListener('click', changeButton);
 btnNext.addEventListener('click', getImage);
 
 const fileInput = document.querySelector('.btn-load--input');
-console.log(fileInput);
 
 fileInput.addEventListener('change', function(e) {
   const file = fileInput.files[0];
@@ -91,9 +89,18 @@ fileInput.addEventListener('change', function(e) {
   reader.onload = () => {
     const img = new Image();
     img.src = reader.result;
-    /*mainImage.innerHTML = "";
-    mainImage.append(img);*/
     mainImage.src = `${img.src}`;
   }
   reader.readAsDataURL(file);
 });
+
+//полный экран
+const buttonFullScreen = document.querySelector(".fullscreen");
+
+const changeScreen = () => {
+  if(document.fullscreenElement === null){
+    document.documentElement.requestFullscreen();
+  }
+  else document.exitFullscreen();
+}
+buttonFullScreen.addEventListener('click', changeScreen);
