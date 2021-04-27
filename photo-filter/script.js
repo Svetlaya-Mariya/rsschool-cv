@@ -104,7 +104,7 @@ btnSave.addEventListener('click', function (e) {
     canv.width = picture.width;
     canv.height = picture.height;
     const ctx = canv.getContext("2d");
-    ctx.filter =  `blur(${labels[0].value}px) invert(${labels[1].value}%) sepia(${labels[2].value}%) saturate(${labels[3].value}%)  hue-rotate(${labels[4].value}deg)`;
+    ctx.filter =  `blur(${labels[0].value*1.8}px) invert(${labels[1].value}%) sepia(${labels[2].value}%) saturate(${labels[3].value}%)  hue-rotate(${labels[4].value}deg)`;
     ctx.drawImage(picture, 0, 0);
     let saveImg = document.createElement('a');
     saveImg.download = 'picture.png';
