@@ -40,3 +40,7 @@ const toCapitalCase = (str) => {
 ## English:
 + EPAM English test result: A1
 I can tell about myself and keep up the conversation in English with non-native speaker. I try to watch films, TV, read articles in English.
+<<<<<<< HEAD
+=======
+
+>>>>>>> bb2056b11c4f20cfe38e3f0ed0c36891dd30f63e
